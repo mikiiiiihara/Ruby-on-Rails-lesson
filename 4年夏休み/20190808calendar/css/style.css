@@ -1,0 +1,38 @@
+h1 {
+    font-size: 18px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tr:first-child{
+    font-weight: bold;
+}
+td {
+    border: 1px solid #ddd;
+    padding: 5px 20px 40px 2.5px;
+    text-align: left;
+}
+
+td:first-child {
+    color: red;
+}
+
+td:last-child {
+    color: royalblue;
+}
+
+td.is-disabled {
+    color: #ccc;
+}
+
+.is-today{
+    background-color: pink;
+}
+textarea{
+    width: 100%;
+    border: none;
+    background-color:transparent;
+    font-weight: bold;
+}

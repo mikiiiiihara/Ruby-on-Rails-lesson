@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <link href="twitter.css" rel="stylesheet">
+</head>
+<body>
+
+            <div id="app">
+                <header><h2>予定一覧</h2></header>
+                <table>
+                    <!-- テーブルヘッダー -->
+
+                    <tbody>
+                      <!-- [1] ここに <tr> で ToDo の要素を1行づつ繰り返し表示したい -->
+                            <tr v-for="item in todos" v-bind:key="item.id">
+                                    <td class="each-comment">{{ item.comment }}</td>
+                                    <td class="button">
+                                      <!-- 削除ボタンのモック -->
+                                      <button v-on:click.shift="doRemove(item)">
+                                            削除
+                                          </button>
+                                    </td>
+                                  </tr>
+                    </tbody>
+                  </table>
+                  <div id="addTweet">
+                  <h3>ToDoリストを追加</h3>
+                  <form class="add-form" v-on:submit.prevent="doAdd">
+                    <!-- コメント入力フォーム -->
+                    <textarea ref="comment"></textarea>
+                    <!-- 追加ボタンのモック -->
+                    <button type="submit">追加</button>
+                  </form>
+                </div>
+            </div>
+
+    <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src = "twitter.js"></script>
+</body>
+</html>

@@ -1,0 +1,870 @@
+@charset "utf-8";
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.clearfix:after{
+  content:" ";
+  clear: both;
+  display: block;
+}
+#rotate_logo{
+    width: 5vw;
+    position: fixed;
+    right: 2vw;
+    z-index:12;
+    top: 0.5vw;
+}
+
+
+ul{
+    margin: 0;
+}
+
+/*main view css*/
+#main{
+    height: auto;
+    width: 100vw;
+    min-height: 94vh;
+    margin-top: 6vh;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.mobile_menu{
+    display: hidden;
+}
+.header{
+     position:absolute;
+     top:6vw;
+     width:100%;
+     z-index:-2;
+ }
+ .twitter_timeline{
+     z-index: 10000;
+ }
+ /*this will be the design of the guest*/
+
+ .event1{
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    margin: 6px 0px 0px 0px;
+    background-image: url(../img/taku_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .event2{
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    margin: 6px 0px 0px 0px;
+    background-image: url(../img/keisuke_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .event3{
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    margin: 6px 0px 0px 0px;
+    background-image: url(../img/fashion_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .event4{
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    margin: 6px 0px 0px 0px;
+    background-image: url(../img/bird_logo_white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .guest_title {
+    width: 26vw;
+    height: 13vh;
+    margin: 9vh auto -6vh;
+    background-image: url(../img/guest_title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.guest{
+    float:left;
+    margin:0 1vw 0 1vw;
+}
+
+ .guester{
+    height: 55vh;
+    width: 80vw;
+    margin: 54vh auto 0 auto;
+}
+ .flower_guest{
+    position: absolute;
+    top: -36vh;
+    width: 18vw;
+    height: 36vh;
+    background-color: #F5E06C;
+    background-image: url('../img/imaihana.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.flower_guest:hover{
+    background-color:white;
+}
+.flower_guest:hover + .event1{
+    background-image: url('../img/flower_color.png');
+}
+.event1:hover  .flower_guest{
+    background-color:white;
+}
+.event1:hover{
+    background-image: url('../img/flower_color.png');    
+}
+.event_information{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 0 2vh 0;
+    height: 7vh;
+}
+.event_information p{
+    text-align: center;
+    color:white;
+    font-size:0.7rem;
+    line-height: 3px;
+}
+
+.event_info{
+    position: relative;
+    background-color: black;
+    width: 18vw;
+    height: 22vh;
+    margin: 0 auto;
+}
+
+.bird_guest{
+    position: absolute;
+    top: -36vh;
+    width: 18vw;
+    height: 36vh;
+    background-color: #0FA579;
+    background-image: url('../img/mylove.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.event_info{
+    position: relative;
+    background-color: black;
+    width: 18vw;
+    height: 22vh;
+    margin: 0 auto;
+}
+.bird_guest:hover{
+    background-color:white;
+}
+.bird_guest:hover + .event2{
+    background-image: url('../img/bird_color.png');
+}
+.event2:hover{
+    background-image: url('../img/bird_color.png');
+}
+.event2:hover+.bird_guest{
+    background-color: white;
+}
+
+.wind_guest:hover{
+    background-color:white;
+}
+.wind_guest:hover + .event3{
+    background-image: url('../img/wind_color.png');
+}
+.event3:hover{
+    background-image: url('../img/wind_color.png');
+}
+.event3:hover+.wind_guest{
+    background-color: white;
+}
+.wind_guest{
+    position: absolute;
+    top: -36vh;
+    width: 18vw;
+    height: 36vh;
+    background-color: #E6486D;
+    background-image: url('../img/chihiro.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.event_info{
+    position: relative;
+    background-color: black;
+    width: 18vw;
+    height: 22vh;
+    margin: 0 auto;
+}
+.moon_guest{
+    position: absolute;
+    top: -36vh;
+    width: 18vw;
+    height: 36vh;
+    background-color: #3295D2;
+    background-image: url('../img/pei.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.event_info{
+    position: relative;
+    background-color: black;
+    width: 18vw;
+    height: 22vh;
+    margin: 0 auto;
+}
+
+/* moon hover zone: */
+.moon_guest:hover{
+    background-color:white;
+}
+.moon_guest:hover + .event4{
+    background-image: url('../img/moon_color.png');
+}
+.event4:hover{
+    background-image: url('../img/moon_color.png');
+}
+.event2:hover+.bird_guest{
+    background-color: white;
+}
+
+
+/*this will be the third frame*/
+.third_frame{
+    margin:0 0 0 0;
+    width:100vw;
+    height:45vh;
+     background-image:url('../img/frame3.png');
+    background-size:cover;
+    background-position:center;
+}
+@media screen and (max-width: 320px) and (max-width: 480px) {
+.third_frame{
+    width: 320px;
+    height: 480px;
+  }
+}
+.third_info{
+    display:block;
+    margin:1vh;
+}
+.copy_info{
+    text-align:center;
+}
+
+/*this will be the fourth frame*/
+
+.fourth_frame{
+    margin:1vh auto;
+    width:100vw;
+    height:110vh;
+    background-image: url('../img/fourth_frame.png');
+    background-size:cover;
+    position:relative;
+    z-index: 2;
+}
+
+.fourth_hinako{
+    position: absolute;
+    left: 11vw;
+    width: 41vw;
+    top: 43vh;
+    height: auto;
+    display: block;
+}
+.fourth_title{
+    color:white;
+    font-weight: bold;
+    font-size:3vw;
+    text-align: center;
+}
+.specific{
+    position: absolute;
+    top: 24vh;
+    left: -1vw;
+}
+.specific a{
+    background-image:url("../img/specific.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    width:23vw;
+    padding-top:7vw;
+    margin-left:10vw;
+    margin-bottom: 3vw;
+    display:block;
+    z-index: 2;
+}
+.specific a:hover{
+    background-image:url("../img/specific_hover.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    width:23vw;
+    padding-top:7vw;
+    margin-left:10vw;
+    margin-bottom: 3vw;
+    display:block;
+    z-index: 2;
+}
+
+/*this will be the fifth frame*/
+.pregues_titile{
+    width: 35vw;
+    height: 8vh;
+    margin: 0 auto;
+    background-image: url(../img/title_previous.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}        
+
+.collab_title{
+    width: 26vw;
+    height: 18vh;
+    margin: 28px auto;
+    background-image: url(../img/title_collaboration.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fifth_frame{
+    position:relative;
+    margin:25vh auto;
+    width:100vw;
+    height:70vh;
+    background-image: url('../img/fifth_frame.png');
+    background-size:cover;
+    background-position:center;
+    background-color: black;
+    opacity:0.8;
+    z-index: -2;
+}
+.fifth_info{
+    position:absolute;
+    bottom:0;
+    left:38vw;
+    text-align:center;
+    color:white;
+    font-size:3.5vw;
+}
+/* ---------------------this will be the seventh frame---------------------- */
+
+.collab1{
+    display:none;
+    height:20vh;
+    width:100vw;
+    background-image: url('../img/mobile_collab1.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-bottom:3vh;
+}
+.collab2{
+    display:none;
+    height:20vh;
+    width:100vw;
+    background-image: url('../img/mobile_collab2.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-bottom:3vh;
+}
+
+.collab3{
+    display:none;
+    height:20vh;
+    width:100vw;
+    background-image: url('../img/mobile_collab3.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom:3vh;
+}
+
+
+#collabo{
+    text-align: center;
+    clear: left;
+    margin: 0 0 5vh 0;
+}
+.menus{
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bmen{
+    width: 20vw;
+    height: 22vw; 
+    float: left;
+    z-index: 3;
+    margin-right:3vw;
+    margin-bottom:3vw;
+    position: relative;
+}
+.cmenu{
+    width: 20vw;
+    height: 22vw;
+    z-index: 3;
+    position: relative;
+   
+}
+.bmen h2{
+    opacity: 0.8;
+
+}
+.bmen p{
+    opacity: 0.8;
+
+}
+
+.square{
+    position: relative;
+    top: 0%;
+    right: 6vw;
+    width: 8vw;
+    z-index: 3;
+}
+
+
+
+.food{
+    width: 11vw;
+    position: relative;
+    top: -19vw;
+    right: 0.5vw;
+    z-index: 3;
+}
+
+.shopname{
+    /* text-align: center; */
+    color:black;
+    position: relative;
+    top: -37.7vw;
+    right: 4vw;
+    z-index: 9;
+    font-size: 1.8vw;
+}
+.menuname{
+    position: relative;
+    top:-39.5vw;
+    left: 5.5vw;
+    z-index: 8;
+    font-size: 1.1vw;
+}
+.menuname p{
+    opacity: 0.8;
+}
+
+.bline{
+    width: 17vw;
+    position: absolute;
+    top: 18.5vw;
+    right:1.7vw;
+    z-index: 4;
+    
+}
+.sentence{
+    position: absolute;
+    top: 14.5vw;
+    right: 5vw;
+    z-index: 4;
+    color: black;
+    font-size: 1.2vw;
+    line-height:2.7vw;
+}
+span{
+    font-size: 2vw;
+}
+
+.menus::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+.menus{
+    *zoom: 1;
+}     
+.pregues{
+    text-align: center;
+}
+    div.example1 {
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    height: 35vw;
+    margin-bottom: 1.5em;
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    .preguest{
+        width: 19%;
+        /* float: left; */
+        display: inline-block;
+        margin-left: 3vw;
+
+    }
+    .rui{
+        margin-bottom:0.5vw;
+    } 
+    .jiro{
+        margin-bottom:1.0vw;
+
+    }
+    .natsuki{
+        margin-bottom:1.5vw;
+
+    }
+    .zumi{
+        margin-bottom:2.0vw;
+
+    }
+    .kirin{
+        margin-bottom:2.5vw;
+
+    }
+    .rokkaku{
+        margin-bottom:3.0vw;
+
+    }
+    .anzai{
+        margin-bottom:3.5vw;
+
+    }
+
+
+/*eight*/
+.eighth_frame{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+.eight {
+    text-align: center;
+    padding: 24vh;
+    font-size: 34px;
+}
+
+.tano{
+        width: 35vw;
+        height: 20vh;
+        position: absolute;
+        display: block;
+        top: 40vh;
+        right: 18vw;
+        background-image:url(../img/tano.png);
+        background-size: contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+.eightTitle{
+    display: block;
+    height: 20vh;
+    width: 41vw;
+    background-image: url(../img/mobile_special123.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px auto;
+}
+
+.yoshiposition {
+    display: block;
+    width: 19vw;
+    height: auto;
+    margin: 12vh 27vw;
+}
+.bottom_view{
+    background-image: url('../img/eight.png');
+    background-size:cover;
+    position:absolute;
+    opacity:0.8;
+    bottom:0;
+    width:100%;
+    height:53vh;
+    z-index: -3;
+}
+.footer{
+    width:100vw;
+    height:65vh;
+    background-color: black;
+}
+.footer_you{
+    display: block;
+    width: 100%;
+    height: 20vh;
+    padding: 23px 0 0 0;
+}
+.footer_you p{
+    text-align: center;
+    color:white;
+}
+.footer_you a{
+    color:white;
+}
+.footer_img{
+    display:block;
+    width:20vw;
+    height: auto;
+    margin:0 auto;
+    padding: 15vh 0 0 0;
+}
+
+
+/*-----------------------------------------------MEDIA!!!-----------------------------------------------------*/
+
+/*first frame will be from here */
+
+@media screen and (max-width:621px){
+
+ #menubar{
+     height:0;
+ }
+#main{
+    background-image: url('../img/mobile_header.png');
+    margin-top:0;
+    position:relative;
+    height:100vh;
+}
+
+
+
+
+/*this will be the second frame*/
+.guest{
+    margin:1vh auto;
+    clear:left;
+}
+.event_information p{
+    font-size:0.7rem;
+    line-height:3px;
+}
+.guest_title{
+    width: 40vw;
+    height: 12vh;
+    margin: 9vh auto -6vh;
+}
+.guestview{
+    margin-left:auto;
+    margin-right:auto;
+}
+.flower_guest {
+    position: absolute;
+    top: 0;
+    left: -25vw;
+    width: 29vw;
+    height: 19vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bird_guest {
+    position: absolute;
+    top: 0;
+    left: -25vw;
+    width: 29vw;
+    height: 19vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wind_guest {
+    position: absolute;
+    top: 0;
+    left: -25vw;
+    width: 29vw;
+    height: 19vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.moon_guest {
+    position: absolute;
+    top: 0;
+    left: -25vw;
+    width: 29vw;
+    height: 19vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.event_information{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 58vw;
+    height: auto;
+    top: 12vh;
+}
+.event_info {
+    position: relative;
+    right: -23vw;
+    width: 58vw;
+    height: 19vh;
+    margin: ０ 22vw auto;
+    top: -48vh;
+}
+.event1{
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    margin: 13px 0 0px 0px;
+    background-image:url('../img/flower_color.png');
+}
+.event2{
+    background-image:url('../img/bird_color.png')
+}
+
+.event3{
+    background-image:url('../img/wind_color.png')
+}
+
+.event4{
+    background-image:url('../img/moon_color.png')
+}
+
+/*this will be the third frame*/
+
+.third_frame{
+    margin: -27vh 0 0 0;
+    height: 26vh;
+    background-image: url(../img/mobile_frame3.png);
+}
+
+/*this will be the fourth frame*/
+.pregues_titile{
+    width: 50vw;
+}        
+
+.collab_title{
+    width: 46vw;
+    height: 13vh;
+    background-image: url(../img/title_collaboration.png);
+}
+.fourth_frame{
+    margin: 10vh auto;
+    height: 50vh;
+    background-image: url(../img/mobile_fourth_frame.png);
+}
+.fourth_title{
+    position: absolute;
+    left: -4vw;
+    bottom: 10vh;
+    width: 35vw;
+    font-size: 5vw;
+}
+.specific{    
+    top:-8vh;    
+    left:-8vw;
+}
+
+.specific_space{    
+    position: absolute;
+    bottom: -23vh;
+    left: 10vw;
+    background-size: cover;
+    opacity: 0.8;
+    width: 23vw;
+    height: auto;
+
+}
+/*this will be the fifth frame*/
+
+.fifth_frame{
+    height: 25vh;
+    background-image: url('../img/mobile_fifth_frame.png');
+}
+
+/*sixth frame*/
+.preguest{
+    width: 36%;
+}
+div.example1 {
+    margin-top: 10vw;
+    width: 100%;
+    height:80vw;
+}
+        
+ 
+
+/*seventh frame*/
+#collabo{
+    display:none;
+}
+.collab1{
+    display:block;
+}
+.collab2{
+    display:block;
+}
+.collab3{
+    display:block;
+}
+
+/* eighth frame */
+
+.eighth_frame{
+    height:57vh;
+}
+.eightTitle{
+    width: 90vw;
+}
+
+.eight {
+    display:none;
+}
+.yoshiposition {
+    display: block;
+    width: 38vw;
+    height: auto;
+    margin: -5vh 45vw 0 auto;
+}
+.tano{
+    top: 18vh;
+    right: 10vw;
+}
+
+.bottom_view{
+    height:18vh;
+}
+
+
+/*this will be the Last frame*/
+
+
+.footer_you p{
+    font-size: 4vw;
+}
+
+.footer_img{
+    width: 30vw;
+    padding: 8vh 0 0 0;
+}
+}

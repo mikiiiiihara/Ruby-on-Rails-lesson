@@ -1,0 +1,7 @@
+tr:first-child{
+    background-color:#FFD700;
+    color: black;  
+}
+tr{
+    background-color:white;
+}

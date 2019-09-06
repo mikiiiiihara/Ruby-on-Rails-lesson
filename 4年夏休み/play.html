@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+<body>
+  <textarea id="article" placeholder="ここに書き込みます"></textarea>
+  <textarea id="article2" placeholder="ここに書き込みます"></textarea>
+  <script type="text/javascript">
+  var textarea = $("#article");
+
+  textarea.ready(function(){
+    textarea.val(localStorage.getItem("article"));
+  });
+
+  textarea.keyup(function(){
+    var value = textarea.val();
+    localStorage.setItem("article", value);
+  });
+
+  var textarea2 = $("#article2");
+
+textarea2.ready(function(){
+  textarea2.val(localStorage.getItem("article2"));
+});
+
+textarea2.keyup(function(){
+  var value = textarea2.val();
+  localStorage.setItem("article2", value);
+});
+  </script>
+</body>
+</html>

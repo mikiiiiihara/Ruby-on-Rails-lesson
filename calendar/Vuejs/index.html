@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>第５章|コンポーネントでUI部品を作る</title>
+    <link href="main2.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <h3>親側のテンプレート</h3>
+        <!-- これがいわゆる設計図。子コンポーネントはこれを元に作られる。
+        ただ、これだけでは子コンポーネントが各々のデータを持つことができないので、
+        js側でテンプレートを定義し、データを持たせるための準備をする必要がある。 -->
+            <ul>
+                    <comp-child v-for="item in list"
+                      v-bind:key="item.id"
+                      v-bind:name="item.name"
+                      v-bind:hp="item.hp"></comp-child>
+                  </ul>
+    </div>
+
+    <div id="app1">
+        <h3>親側のテンプレート</h3>
+            <comp-child v-on:childs-event="parentsMethod"></comp-child>
+    </div>
+
+    <div id="app2">
+        <h3>親が持つデータの操作</h3>
+        <p style="color:darkgray;">子からのアクションで、親のデータを変更する</p>
+        <ul>
+                <comp-child v-for="item in list"
+                  v-bind:key="item.id"
+                  v-bind="item"
+                  v-on:attack="handleAttack"></comp-child>
+              </ul>
+    </div>
+
+    <comp-child>
+            <header slot="header">
+              Hello Vue.js!
+            </header>
+            Vue.jsはJavaScriptのフレームワークです。
+          </comp-child>
+
+          
+
+    <div id="app3">
+        <h3>コンポーネントの双方向データバインディング</h3>
+        <my-component v-bind:name.sync="name" v-bind:hp.sync="hp"></my-component>
+    </div>
+
+    <div id="app4">
+        <h3>その他の機能やオプション</h3>
+        <button v-on:click="current^=1">コンポーネントを切り替え</button>
+<div v-bind:is="component"></div>
+    </div>
+
+    <div id="app5">
+        <h3>keep-aliveで状態を維持する①</h3>
+        <button v-on:click="current='comp-board'">メッセージ一覧</button>
+        <button v-on:click="current='comp-form'">投稿フォーム</button>
+        <div v-bind:is="current"></div>
+        <p>これだと、動的コンポーネントを切り替えたら、既存のインスタンスが破棄されてしまう<br>
+            （途中入力したまま切り替えると破棄されてしまう）</p>
+    </div>
+
+    <div id="app6">
+            <h3>keep-aliveで状態を維持する②</h3>
+            <button v-on:click="current='comp-board'">メッセージ一覧</button>
+            <button v-on:click="current='comp-form'">投稿フォーム</button>
+            <keep-alive>
+              <div v-bind:is="current"></div>
+              <p>切り替えても破棄されない(keep-alive機能)</p>
+            </keep-alive>
+    </div>
+
+    <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <!-- Lodash Library install -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+    <script src = "main.js"></script>
+    
+</body>
+</html>

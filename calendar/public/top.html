@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/menubar_style.css" type="text/css" rel="stylesheet" />
+
+    <!-- ogp -->
+    <meta property="og:title" content="wasFES2017" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.waseda-ad.com/wasefes2017/img/eyecatch.jpg" />
+    <meta property="og:site_name" content="wasFES2017" />
+    <meta property="og:description" content="早稲田祭にて早稲田大学広告研究会がゲストをお呼びして４つのイベントを開催します。">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="@was_105th">
+    <meta name="twitter:creator" content="@was_105th">
+        <!-- アナリティクス -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39732684-5"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-39732684-5');
+            </script>
+    
+    <title>wasFES2017</title>
+
+</head>
+<body>
+             <div id="nav_wrapper">
+                <ul id="menu_wrapper">
+                    <li><a class="menu_item" href="#">HOME</a></li>
+                    <li><a class="menu_item" href="#">EVENTS</a>
+                       <ul class="menu_level2_wrapper">
+                            <li class="menu_level2_item"><a href="asobi/asobi.html">あそびごころファクトリー</a></li>
+                            <li class="menu_level2_item"><a href="lie/lie.html">FAKE ME HAPPY</a></li>
+                            <li class="menu_level2_item"><a href="fashion/fashion.html">FASHION PLUS</a></li>
+                            <li class="menu_level2_item"><a href="ego/ego.html">EGO SEARCH</a></li>                            
+                        </ul> 
+                     </li>
+                     <li><a class="menu_item" href="#">PROJECTS</a>
+                        <ul class="menu_level2_wrapper">
+                            <li class="menu_level2_item"><a href="local/local.html">LOCAL STUDENTS SUPPORT PROJECT</a></li>
+                            <li class="menu_level2_item"><a href="#collabo">COLLABORATION MENU</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="menu_item" href="#pregues">PREVIOUS GUESTS</a></li>
+                    <div id="rotate_logo_wrapper">
+                        <img src="img/wasfeslogo.png" id="rotate_logo" style="transform-origin: center; ">                        
+                    </div>
+
+                    <script src="javascript/jquery.min.js"></script>
+                        <script>
+                        (function(){
+                        var $win = $(window),
+                        $target = $('#rotate_logo');
+                        
+                        $win.on('scroll', function() {
+                        var value = $(this).scrollTop();
+                        var property = "rotate("+value+"deg)";
+                        $target.css("transform",property);
+                        console.log(property);
+                        });
+                        })();
+                    </script>
+
+                    <div id="acdn-button" class="acdn-button">
+                    </div>
+
+                    <a href="http://www.waseda-ad.com/">
+                        <div class="was_logo">
+                        </div>
+                    </a>
+
+                    <!-- this will be the mobile menu -->
+                    <div id="macdn-button" class="macdn-button">
+                    </div>
+
+                </ul>            
+            </div>
+
+            <div id="main"> 
+
+            </div>
+        </div>
+<!-- 開閉する要素 -->
+        <div id="acdn-target" class="acdn-content"　style="display_none">
+           <a class="twitter-timeline"  href="https://twitter.com/was_105th" data-widget-id="453276619163983872">@was_105thさんのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <!-- mobile menu animation -->
+        <div id="macdn-target" class="macdn-content"> 
+        <div class="whole">
+            <div class="mwasFES mEvent">
+                <a href="#"></a>
+            </div>
+            <div class="mlocal mEvent">
+                <a href="local/local.html"></a>
+            </div>
+            <div class="mmoon mEvent">
+                <a href="asobi/asobi.html"></a>
+            </div>
+            <div class="mwind mEvent">
+                <a href="lie/lie.html"></a>
+            </div>
+            <div class="mflower mEvent">
+                <a href="fashion/fashion.html"></a>
+            </div>
+            <div class="mbird mEvent">
+                <a href="ego/ego.html"></a>
+            </div>
+        </div>
+    </div>
+    <!--this will be the guest view-->
+    <div class="guestview clearfix">
+        <div class="guest_title">
+        </div>
+            <div class="guester">
+                <a href="asobi/asobi.html">
+                <div class="flower guest">
+                <div class="event_info">
+                    <div class="flower_guest">
+                    </div>
+                    <div class="logo event1">
+                    </div>
+                    <div class="event_information">
+                        <p>11/4(Sat.)</p>
+                        <p>12:30-13:30</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+                <a href="lie/lie.html">
+                <div class="bird guest">
+                        <div class="event_info">
+                            <div class="bird_guest">
+                            </div>
+                            <div class="logo event2">
+                            </div>
+                            <div class="event_information">
+                                    <p>11/4(Sat.)</p>
+                                    <p>15:00-16:00</p>
+                            </div>
+                        </div>
+                </div>        
+                </a>
+                <a href="fashion/fashion.html">
+                <div class="wind guest">
+                        <div class="event_info">
+                            <div class="wind_guest">
+                            </div>
+                            <div class="logo event3">
+                            </div>
+                            <div class="event_information">
+                                    <p>11/5(Sun.)</p>
+                                    <p>12:00-13:00</p>
+                                </div>
+                        </div>
+                </div>
+                </a>
+                <a href="ego/ego.html">
+                <div class="moon guest">
+                    <div class="event_info">
+                        <div class="moon_guest">
+                        </div>
+                        <div class="logo event4">
+                        </div>
+                        <div class="event_information">
+                                <p>11/5(Sun.)</p>
+                                <p>14:30-15:30</p>
+                            </div>
+                    </div>
+               </div>
+                </a>
+            </div>
+    </div>
+
+        <!--this will be the third frame-->
+
+        <div class="third_frame">
+        </div>
+        <div class="third_info">
+            <p class="copy_info">時代は、目まぐるしく変わる。</p>
+            <p class="copy_info">変化が多い時代でも、変わらないものがある。</p>
+            <p class="copy_info">それが、「想い」だ。</p>
+            <p class="copy_info">wasFESでは、学生の「想い」を4つのテーマで考える。</p>
+            <p class="copy_info">ここで、新しい「想い」に出会うかもしれない。</p>            
+            <p class="copy_info">新しい自分になるかもしれない。</p>
+            <p class="copy_info">「想い」を、一緒に彩らないか。</p>
+            <p class="copy_info">wasFES2017を、一緒に彩らないか。</p>
+            <p class="copy_info">早稲田祭を、一緒に彩らないか。</p>            
+        </div>
+
+        <!--this will be the fourth frame-->
+        <div class="fourth_frame">
+            <div class="fourth_hinako">
+                <h3 class="fourth_title">地方受験生支援<br>プロジェクト</h3>
+                <div class="specific">
+                    <a href="local/local.html"></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="fifth_frame">
+            <p class="fifth_info">coming soon...</p>
+        </div>
+        <!--this will be the sixth frame-->
+        <div id = "pregues">
+                <div class="pregues_titile"> </div>        
+            <div class="example1">
+ <img src = "img/nonoka.png" class = "preguest nonoka"><img src = "img/Rui.png" class = "preguest rui"><img src = "img/jiro.png" class = "preguest jiro"><img src = "img/natsuki.png" class = "preguest natsuki"><img src = "img/zumi.png" class = "preguest zumi"><img src = "img/kirin.png" class = "preguest kirin"><img src = "img/rokkaku.png" class = "preguest rokkaku"><img src = "img/anzai.png" class = "preguest anzai">
+                    
+                    </div>
+        </div>
+
+            <!-- this will be the seventh frame -->
+
+        <div class="collab_title"></div>
+        
+        <div class="collab1"></div>
+        <div class="collab2"></div>
+        <div class="collab3"></div>
+
+        <div id = "collabo" >
+            <div class = "menus">
+            <div class = "bmen">
+            <div class = "cmenu">
+                <!-- 値段表 -->
+              <img src = "img/aka.png" class = "square">
+                
+                </div> 
+                <!-- ご飯の写真 -->
+                <img src = "img/chisoba.png" class = "food">
+                <h2 class = "shopname">違う家</h2>
+                <p class = "menuname">
+                    魚介の油そば
+                </p>
+                <img src = "img/bline.png" class = "bline">
+                <p class = "sentence"><span>¥630</span><br>
+                    10月21日~11月末</p>
+
+                
+        </div> 
+        <div class = "bmen">
+                <div class = "cmenu">
+                    <!-- 値段表 -->
+                    <img src = "img/ao.png" class = "square">
+                    
+                    </div> 
+                    <!-- ご飯の写真 -->
+                    <img src = "img/hoisuru2.png" class = "food">
+                    <h2 class = "shopname">　　　Whistle CAFE</h2>
+                    <p class = "menuname">
+                    was waffles
+                    </p>
+                    <img src = "img/bline.png" class = "bline">
+                    <p class = "sentence"><span>¥850</span><br>
+                        10月4日~11月19日</p>
+    
+                    
+            </div> 
+            <div class = "bmen">
+                    <div class = "cmenu">
+                        <!-- 値段表 -->
+                        <img src = "img/midori.png" class = "square">
+                        
+                        </div> 
+                        <!-- ご飯の写真 -->
+                        <img src = "img/vgcafe2.png" class = "food">
+                        <h2 class = "shopname">　　Cafe VG</h2>
+                        <p class = "menuname">
+                        ポッピングwas<br>
+                        ポップオーバー
+                        </p>
+                        <img src = "img/bline.png" class = "bline">
+                        <p class = "sentence"><span>¥600</span><br>
+                            10月21日~11月末</p>
+        
+                        
+                </div> 
+                <div class = "bmen">
+                        <div class = "cmenu">
+                            <!-- 値段表 -->
+                            <img src = "img/kiiro.png" class = "square">
+                            
+                            </div> 
+                            <!-- ご飯の写真 -->
+                            <img src = "img/tanokyu2.png" class = "food">
+                            <h2 class = "shopname">田乃休</h2>
+                            <p class = "menuname">
+                            麻婆麺
+                            </p>
+                            <img src = "img/bline.png" class = "bline">
+                            <p class = "sentence"><span>¥780</span>         　　<br>
+                            10月2日~　</p>
+            
+                            
+                    </div> 
+                    <div class = "bmen">
+                            <div class = "cmenu">
+                                <!-- 値段表 -->
+                                <img src = "img/aka.png" class = "square">
+                                
+                                </div> 
+                                <!-- ご飯の写真 -->
+                                <img src = "img/omurice2.png" class = "food">
+                                <h2 class = "shopname">学食コラボ</h2>
+                                <p class = "menuname">
+                                祭オムライス
+                                </p>
+                                <img src = "img/bline.png" class = "bline">
+                                <p class = "sentence"><span>¥460</span><br>
+                                    10月21日~11月末</p>
+                        </div> 
+
+                        <div class = "bmen">
+                                <div class = "cmenu">
+                                    <!-- 値段表 -->
+                                    <img src = "img/ao.png" class = "square">
+                                    
+                                    </div> 
+                                    <!-- ご飯の写真 -->
+                                    <img src = "img/wagamama3.png" class = "food">
+                                    <h2 class = "shopname">学食コラボ</h2>
+                                    <p class = "menuname">
+                                        わがまま杏仁
+                                    </p>
+                                    <img src = "img/bline.png" class = "bline">
+                                    <p class = "sentence"><span>¥100</span><br>
+                                        10月21日~11月末</p>
+                            </div> 
+            </div> 
+        </div>
+                   <!--this will be the eighth frame-->
+                <div class="eighth_frame">
+                     <div class="eightTitle"></div>
+                    <a href="http://yosidachicken.com/"><img  src="img/yoshida.png" class="yoshiposition"></a>
+                <div class="yoshida_momoko">
+                </div>
+                <div class="tano"></div>
+                <div class="bottom_view">
+                </div>
+                </div>
+            <div class="footer">
+                <img src="img/footer_was.png" class="footer_img">
+                <div class="footer_you">
+                    <p>早稲田大学広告研究会は、2013年で創立百周年を迎えた早稲田大学公認サークルです。</p>
+                    <p>映像広告、グラフィック広告、Webサイトの企画・製作、プロモーション等の立案、</p>
+                    <p>イベント運営などを行っています。外部からの受注製作も受け付けております。</p>
+                    <p>公式サイト ： <a href="http://www.waseda-ad.com">http://www.waseda-ad.com</p>
+                </div>
+            </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"> </script>   
+    <script src="javascript/twitter.js"></script>
+</body>
+<html
+

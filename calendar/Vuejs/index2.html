@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>第６章|トランジションとアニメーション</title>
+    <link href="main2.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <p><button v-on:click="order=!order">切り替え</button></p>
+        <!-- transition-groupタグに指定した属性はラップ要素に付与される -->
+        <transition-group tag="ul" class="list">
+          <li v-for="item in sortedList" v-bind:key="item.id">
+            {{ item.name }} {{ item.price }}円
+          </li>
+        </transition-group>
+    </div>
+
+    <div id="app1">
+        <p>
+          <button v-on:click="doShuffle">シャッフル</button>
+          <button v-on:click="doAdd">追加</button>
+        </p>
+        <transition-group tag="ul" class="list">
+          <li v-for="(item, index) in list"
+            v-bind:key="item"
+            class="item"
+            v-on:click="doRemove(index)">{{ item }}</li>
+        </transition-group>
+      </div>
+
+      <div id="app2">
+        <button v-on:click="toggle=!toggle">切り替え</button>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <!-- SVGのパーツにトランジションを適用 -->
+          <transition>
+            <my-circle v-bind:fill="fill" v-bind:key="fill"></my-circle>
+          </transition>
+        </svg>
+      </div>
+      
+      <div id="app3">
+        <p><button v-on:click="show=!show">切り替え</button></p>
+        <transition
+          v-on:before-enter="beforeEnter"
+          v-on:enter="enter"
+          v-on:after-enter="afterEnter"
+          v-on:enter-cancelled="enterCancelled"
+          v-on:before-leave="beforeLeave"
+          v-on:leave="leave"
+          v-on:after-leave="afterLeave"
+          v-on:leave-cancelled="leaveCancelled">
+          <div v-if="show">example</div>
+        </transition>
+      </div>
+
+
+    <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <!-- Lodash Library install -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+    <script src = "main2.js"></script>
+    
+</body>
+</html>

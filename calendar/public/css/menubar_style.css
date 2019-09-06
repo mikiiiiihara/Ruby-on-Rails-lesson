@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+/* reset.css */
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*menu bar*/
+/* 開閉する要素 */
+
+
+.acdn-content
+{  
+  position:absolute;
+  top:6vw;
+  width:30%;
+  height:2000px;
+  background-color: black;
+  position:fixed;
+  opacity:0.9;
+  display: none;
+}
+.macdn-content{
+  display: none;
+}
+
+.twitter_background{
+    display:none;
+}
+
+
+
+/* -----------------------------------------smartphone menu bar----------------------------------------------------- */
+
+
+
+
+
+/*上のメニューバー*/
+#nav_wrapper {
+    background-color: black;
+    height: 4rem;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    z-index: 10;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: fixed;
+    top: 0;
+}
+
+#menu_wrapper {
+    text-align: center;
+    line-height: 4rem;
+    position: relative;
+}
+
+.menu_level2_wrapper {
+    color: white;
+}
+
+#menu_wrapper li {
+    display: inline-block;
+    /* font-size: .9rem; */
+    list-style-type: none;
+    position: relative;
+}
+
+.menu_item {
+    padding: 0 1em;
+    line-height: 100%;
+    color: white;
+    line-height: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+
+.menu_level2_item {
+    width: 14em;
+    background: black;
+    color: inherit;
+}
+  
+  #menu_wrapper a:hover {
+    background-color: #EEEEEE;
+    color: black;
+  }
+  
+  
+  #menu_wrapper ul {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+  }
+  
+  #menu_wrapper li:hover ul {
+    display: block;
+  }
+  
+  #rotate_logo_wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    height: 4rem;
+}
+
+#rotate_logo {
+    width: 80%;
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/*twitter icon css*/
+.acdn-button{
+    position: absolute;
+    top: 35%;
+    left: 4%;
+    width: 4vw;
+    height: 4vh;
+    background-image: url(../img/twitter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.was_logo{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    width: 4vw;
+    height: 4vh;
+    background-image: url(../img/waslogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.was_logo {
+    position: absolute;
+    top: 35%;
+    left: 9%;
+    width: 5vw;
+    height: 5vh;
+    background-image: url(../img/waslogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*-----------------------------smart phone menu css---------------------------------*/
+/*-----------------------------------------------MEDIA!!!-----------------------------------------------------*/
+
+/*first frame will be from here */
+
+@media screen and (max-width:621px){
+
+
+
+.macdn-content{
+    display:none;
+    position:fixed;
+    height:90vh;
+    width:100vw;
+    background-color:rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+.whole{
+    width: 85vw;
+    height: 75vh;
+    margin: 0 auto;
+    padding:10vh 0 0 0;
+}
+.mEvent{
+    float: left;
+    background-color: black;
+    z-index: 1001;
+    height: 35vw;
+    width: 35vw;
+    margin: 8px;
+    border-radius:3vw;
+}
+
+.mwasFES a {
+    display: block;
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius:3vw;
+    background-image:url('../img/mmenu_wasFES.png');
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mlocal a{
+    display: block;
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius:3vw;
+    background-image:url('../img/mmenu_local.png');
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mmoon a{
+    display: block;
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius:3vw;
+    background-image:url('../img/mmenu_moon.png');
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mwind a{
+    display: block;
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius:3vw;
+    background-image:url('../img/mmenu_wind.png');
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mflower a{
+    display: block;
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius:3vw;
+    background-image:url('../img/mmenu_flower.png');
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mbird a{
+        display: block;
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius:3vw;
+    background-image:url('../img/mmenu_bird.png');
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mmenu{
+    position: relative;
+}
+.whole{
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+    ul.mainmemo{
+        display:none;
+    }
+    #menubar{
+        height:0;
+    }
+   /* ----------------------------------twitter mobile animation-------------------------------- */
+   .acdn-button{
+       position: absolute;
+       top: 2vh;
+       left: 2vw;
+       width: 14vw;
+       height: 8vh;
+       z-index: 1000;
+       background-image: url('../img/mobile_twitter.png');
+       display: block;
+   }
+   .was_logo{
+       display:none;
+   }
+   
+   .macdn-button {
+       position: absolute;
+       top: 2vh;
+       right: 2vw;
+       width: 14vw;
+       height: 8vh;
+       background-image: url(../img/white_mobile_menu.png);
+       background-repeat: no-repeat;
+       display: block;
+   }
+   
+   .acdn-content{
+     position:absolute;
+     top:10vh;
+     width:100vw;
+   }
+   
+   .macdn-content{
+       top:10vh;
+       height:90vh;
+       width:100vw;
+       background-color:rgba(0,0,0,0.8);
+       z-index: 10000;
+       display: none;
+   }
+}   

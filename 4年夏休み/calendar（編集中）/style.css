@@ -1,0 +1,86 @@
+@charset "UTF-8";
+#wrap{
+    width: 65%;
+    margin-left: 35%;
+}
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+#app{
+    width: 33%;
+    background-color:  #FF6666;
+    position: absolute;
+    top: 8.555vw;
+    left: 1%;
+    padding-bottom: 2%;
+    color: white;
+}
+#app ul{
+    width:80%;
+    height: 10em;
+    overflow-y: scroll;
+}
+#app td{
+    border: none;
+}
+header{
+    text-align: center;
+    position: relative;
+}
+#addTweet textarea{
+    width: 85%;
+    padding-bottom: 20px;
+}
+span{
+    color: gray;
+    font-weight: lighter;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.each-comment{
+    width: 100%;
+    border-bottom: solid 2px whitesmoke;
+    height: auto;
+}
+
+section {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#calendar tr:first-child{
+    background-color: #FF6666;
+    color: white;
+    
+}
+
+#calendar td {
+    border: 1px solid #ddd;
+    padding-right: 32px;
+    padding-bottom: 35px;
+    text-align: left;
+}
+td textarea{
+    width: 100%;
+    border:none;
+}
+
+#calendar td:first-child {
+    color: red;
+}
+
+td:last-child {
+    color: royalblue;
+}
+
+td.is-disabled {
+    color: #ccc;
+}
